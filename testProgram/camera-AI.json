@@ -1,0 +1,39 @@
+{
+    "config": {
+        "host": "192.168.1.223",
+        "port": 1883,
+        "username": "",
+        "password": "",
+        "keeplive": 60,
+        "client": "[timestamp]",
+        "minioEndpoint": "192.168.1.223:9000",
+        "minioAccessKeyId": "xlVzg1PXOIzEbwem",
+        "minioSecretAccessKey": "dZ8UiscLQ6Jd9ELiAeeTc5CbVy1JWv0q"
+    },
+    "data": {
+        "once": [
+            {
+                "wait": 1000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个人员报警,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 1,
+                        "did": "SX2338",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 25.123,
+                        "intrusion": 1
+                    }
+                }
+            }
+        ]
+    }
+}

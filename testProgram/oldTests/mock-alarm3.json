@@ -1,0 +1,234 @@
+{
+    "config": {
+        "host": "192.168.1.223",
+        "port": 1883,
+        "username": "",
+        "password": "",
+        "keeplive": 60,
+        "client": "[timestamp]",
+        "minioEndpoint": "192.168.1.223:9000",
+        "minioAccessKeyId": "pi1oGkGLK6I5Q8bm",
+        "minioSecretAccessKey": "SgEv637n2eaF4a6cuSPDMtCvrCSqKytu"
+    },
+    "data": {
+        "repeat": [
+            {
+                "wait": 1000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个人员报警,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 1,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 25.123,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 2000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个小障碍物报警,category=2",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 2,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 22.123,
+                        "enumValue": 2,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 3000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个侵限报警,category=3",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 3,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 34.123,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 4000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个形变报警,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 4,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 23.123,
+                        "measValue": 20.2,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 5000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个形变报警,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 4,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 23.123,
+                        "measValue": 13.2,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 6000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个形变报警恢复,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 4,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 23.123,
+                        "measValue": 4.2,
+                        "enable": 2
+                    }
+                }
+            },
+            {
+                "wait": 7000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个信号机异常报警,category=5",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 5,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 30.123
+                    }
+                }
+            },
+            {
+                "wait": 8000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个道岔异常报警,category=6",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 6,
+                        "did": "SX1710",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 30.123
+                    }
+                }
+            },
+            {
+                "wait": 9000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个液位异常报警,category=7",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 7,
+                        "did": "YW2803",
+                        "measValue": 50.2
+                    }
+                }
+            },
+            {
+                "wait": 10000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个液位异常报警恢复,category=7",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 7,
+                        "did": "YW2803",
+                        "measValue": 55.2,
+                        "enable": 2
+                    }
+                }
+            }
+        ]
+    }
+}

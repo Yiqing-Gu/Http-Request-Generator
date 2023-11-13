@@ -1,0 +1,115 @@
+{
+    "config": {
+        "host": "192.168.1.223",
+        "port": 1883,
+        "username": "",
+        "password": "",
+        "keeplive": 60,
+        "client": "[timestamp]",
+        "minioEndpoint": "192.168.1.223:9000",
+        "minioAccessKeyId": "pi1oGkGLK6I5Q8bm",
+        "minioSecretAccessKey": "SgEv637n2eaF4a6cuSPDMtCvrCSqKytu"
+    },
+    "data": {
+        "repeat": [
+            {
+                "wait": 1000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个形变事件,category=2",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 2,
+                        "did": "JG1608",
+                        "measValue": 6.2,
+                        "awayFrom": 80.850
+                    }
+                }
+            },
+            {
+                "wait": 2000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个信号机事件,category=3",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 3,
+                        "did": "SX2321",
+                        "enumValue": 2,
+                        "awayFrom": 80.850
+                    }
+                }
+            },
+            {
+                "wait": 3000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个道岔事件,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 4,
+                        "did": "SX1622",
+                        "enumValue": 2,
+                        "awayFrom": 80.850
+                    }
+                }
+            },
+            {
+                "wait": 4000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个液位计事件,category=5",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 5,
+                        "did": "YW2801",
+                        "measValue": 30.2
+                    }
+                }
+            },
+            {
+                "wait": 5000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个液位计事件,category=5",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 5,
+                        "did": "YW2801",
+                        "measValue": 30.2
+                    }
+                }
+            }
+        ]
+    }
+}

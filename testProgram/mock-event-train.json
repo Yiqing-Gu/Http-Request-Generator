@@ -1,0 +1,137 @@
+{
+    "config": {
+        "host": "192.168.1.223",
+        "port": 1883,
+        "username": "",
+        "password": "",
+        "keeplive": 60,
+        "client": "[timestamp]",
+        "minioEndpoint": "192.168.1.223:9000",
+        "minioAccessKeyId": "pi1oGkGLK6I5Q8bm",
+        "minioSecretAccessKey": "SgEv637n2eaF4a6cuSPDMtCvrCSqKytu"
+    },
+    "data": {
+        "repeat": [
+            {
+                "wait": 1000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个测速定位事件,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 1,
+                        "did": "JG1602",
+                        "enum_value": 1,
+                        "measValue": 70.2,
+                        "awayFrom": 120.850
+                    }
+                }
+            },
+            {
+                "wait": 3000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个测速定位事件,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 1,
+                        "did": "JG1602",
+                        "measValue": 80.2,
+                        "awayFrom": 150.850
+                    }
+                }
+            },
+            {
+                "wait": 5000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个测速定位事件,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 1,
+                        "did": "JG1602",
+                        "measValue": 80.2,
+                        "awayFrom": 180.850
+                    }
+                }
+            },
+            {
+                "wait": 7000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个测速定位事件,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 1,
+                        "did": "JG1602",
+                        "measValue": 80.2,
+                        "awayFrom": 210.850
+                    }
+                }
+            },
+            {
+                "wait": 9000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个测速定位事件,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 1,
+                        "did": "JG1602",
+                        "measValue": 80.2,
+                        "awayFrom": 230.850
+                    }
+                }
+            },
+            {
+                "wait": 11000,
+                "topic": "/msg/report/event_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "event_track",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个测速定位事件（无车辆）,category=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]", 
+                        "category": 1,
+                        "did": "JG1602",
+                        "enum_value": 2
+                    }
+                }
+            }
+        ]
+    }
+}

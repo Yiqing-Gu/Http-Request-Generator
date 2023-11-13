@@ -1,0 +1,6 @@
+{
+    "config":{
+        "port" : "8080",
+        "path" : ["/history"]
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "config": {
+        "host": "192.168.1.223",
+        "port": 1883,
+        "username": "",
+        "password": "",
+        "keeplive": 60,
+        "client": "[timestamp]",
+        "minioEndpoint": "192.168.1.223:9000",
+        "minioAccessKeyId": "pi1oGkGLK6I5Q8bm",
+        "minioSecretAccessKey": "SgEv637n2eaF4a6cuSPDMtCvrCSqKytu"
+    },
+    "data": {
+        "once": [
+            {
+                "wait": 1000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个小障碍物报警,category=2",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 2,
+                        "did": "SX2507",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 22.123,
+                        "enumValue": 2,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 3000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个小障碍物报警,category=2",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 2,
+                        "did": "SX3015",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 22.123,
+                        "enumValue": 1,
+                        "intrusion": 2
+                    }
+                }
+            },
+            {
+                "wait": 5000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个小障碍物报警,category=2",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 2,
+                        "did": "SX1606",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 22.123,
+                        "enumValue": 2,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 7000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestampINT]",
+                    "data": {
+                        "desc": "这是一个小障碍物报警,category=2",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 2,
+                        "did": "SX2706",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 22.123,
+                        "enumValue": 1,
+                        "intrusion": 2
+                    }
+                }
+            }
+
+        ]
+    }
+}

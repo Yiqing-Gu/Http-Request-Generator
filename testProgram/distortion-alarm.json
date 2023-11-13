@@ -1,0 +1,109 @@
+{
+    "config": {
+        "host": "192.168.1.223",
+        "port": 1883,
+        "username": "",
+        "password": "",
+        "keeplive": 60,
+        "client": "[timestamp]",
+        "minioEndpoint": "192.168.1.223:9000",
+        "minioAccessKeyId": "pi1oGkGLK6I5Q8bm",
+        "minioSecretAccessKey": "SgEv637n2eaF4a6cuSPDMtCvrCSqKytu"
+    },
+    "data": {
+        "once": [
+            {
+                "wait": 1000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个形变报警,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 4,
+                        "did": "SX1511",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 23.123,
+                        "measValue": 13.2,
+                        "intrusion": 0
+                    }
+                }
+            },
+            {
+                "wait": 3000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个形变报警,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 4,
+                        "did": "SX2509",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 23.123,
+                        "measValue": 13.2,
+                        "intrusion": 1
+                    }
+                }
+            },
+            {
+                "wait": 5000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个形变报警,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 4,
+                        "did": "SX3228",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 23.123,
+                        "measValue": 13.2,
+                        "intrusion": 0
+                    }
+                }
+            },
+            {
+                "wait": 7000,
+                "topic": "/msg/report/alarm_track",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "alarm_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个形变报警,category=4",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "endTime": "[timestampINT]",
+                        "category": 4,
+                        "did": "SX1914",
+                        "images": "tmp/test-png.png",
+                        "video": "tmp/test-mp4.mp4",
+                        "awayFrom": 23.123,
+                        "measValue": 13.2,
+                        "intrusion": 1
+                    }
+                }
+            }
+        ]
+    }
+}

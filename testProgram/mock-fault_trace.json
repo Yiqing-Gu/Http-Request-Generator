@@ -1,0 +1,89 @@
+{
+    "config": {
+        "host": "192.168.1.223",
+        "port": 1883,
+        "username": "",
+        "password": "",
+        "keeplive": 60,
+        "client": "[timestamp]",
+        "minioEndpoint": "192.168.1.223:9000",
+        "minioAccessKeyId": "pi1oGkGLK6I5Q8bm",
+        "minioSecretAccessKey": "SgEv637n2eaF4a6cuSPDMtCvrCSqKytu"
+    },
+    "data": {
+        "repeat": [
+            {
+                "wait": 1000,
+                "topic": "/msg/report/fault_trace",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "fault_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个KK相机故障,fault_type=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "did": "KK2321",
+                        "faultType": 1,
+                        "enable": 2
+                    }
+                }
+            },
+            {
+                "wait": 2000,
+                "topic": "/msg/report/fault_trace",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "fault_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个激光雷达故障,fault_type=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "did": "JG1710",
+                        "faultType": 1,
+                        "enable": 2
+                    }
+                }
+            },
+            {
+                "wait": 3000,
+                "topic": "/msg/report/fault_trace",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "fault_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个AI相机故障,fault_type=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "did": "SX1503",
+                        "faultType": 1,
+                        "enable": 2
+                    }
+                }
+            },
+            {
+                "wait": 4000,
+                "topic": "/msg/report/fault_trace",
+                "qos": 1,
+                "retain": false,
+                "payload": {
+                    "cmd": "fault_trace",
+                    "cmdId": "[timestamp]",
+                    "data": {
+                        "desc": "这是一个液位仪故障,fault_type=1",
+                        "uid": "[timestampINT]",
+                        "startTime": "[timestampINT]",
+                        "did": "YW1501",
+                        "faultType": 1,
+                        "enable": 2
+                    }
+                }
+            }
+        ]
+    }
+}
