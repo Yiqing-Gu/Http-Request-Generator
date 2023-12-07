@@ -1,4 +1,4 @@
-# httpRequestGenerator
+# http-Request-Generator
 
 This is the repository for the tool of http-requests generator. It is my past projects when I worked in Visking Ltd.
 
