@@ -1,6 +1,3 @@
-
-HTTP Server and Request Simulator
-
 ## Overview
 
 This is a Go program that serves as both an HTTP server and a client for sending HTTP POST requests based on configurations defined in a JSON file. `serv/serv.go` can:
